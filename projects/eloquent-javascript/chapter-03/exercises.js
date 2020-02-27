@@ -10,7 +10,6 @@
  * Output:  number
  */
 function min(a, b) {
-  
   // Is a smaller than b?
   if (a < b) {
     // Yes, so return a
@@ -34,7 +33,6 @@ function min(a, b) {
  * Output:  Boolean
  */
 function isEven(number) {
-console.log(number);
     // Is the number even?
     if (number === undefined) {
       return true;
@@ -51,7 +49,6 @@ console.log(number);
       // Subtract 2 from number and check again
       return isEven(number - 2);
     }
-  
 }
 
 ////////////////////////////////////////////////////////////////////////////////

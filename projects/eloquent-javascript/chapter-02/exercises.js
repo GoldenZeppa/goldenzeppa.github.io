@@ -18,14 +18,18 @@
  *  #######
  *
  * Input:  number
+ *
  * Output:  No return statement; however, the function will log a triangle of
  *          #'s.
- *
  */
 function triangles(number) {
+  // Declare a variable for output line and assign it a pound sign
   let line = '#';
+  // Loop to make a triangle with input number of lines
   for (let i = 1; i <= number; i++) {
+    // Log line to console
     console.log(line);
+    // Increment pound sign for next line
     line += '#';
   }
 }
@@ -62,11 +66,11 @@ function triangles(number) {
  *  fizzbuzz
  *
  * Input:  two numbers, starting and ending values
+ *
  * Output:  No return statement; however, the function will log a number if not 
  *          divisible by neither 3 nor 5, 'fizz' is the number is divisible by 
  *          3, 'buzz' if divisible by 5, and 'fizzbuzz' if divisible by both 3 
  *          and 5.
- *
  */
 function fizzBuzz(start, end) {
   // Loop through number range from start to end
@@ -76,18 +80,19 @@ function fizzBuzz(start, end) {
     
     // Is the number divisible by 3?
     if (i % 3 === 0) {
-      // Add 'fizz' to output string
+      // Yes, so add 'fizz' to output string
       output += 'fizz';
     } 
     
     // Is the number divisible by 5?
     if (i % 5 === 0) {
-      // Add 'buzz' to output string
+      // Yes, so add 'buzz' to output string
       output += 'buzz';
     } 
     
     // Is the string still empty?
     if (output === '') {
+      // Yes, then assign current number to ouptut value
       output = i
     }
     
@@ -119,9 +124,9 @@ function fizzBuzz(start, end) {
  *  # # # #
  *
  * Input:  number, determining the size of the grid
+ *
  * Output:  No return statement; however, the function will log a string with 
  *          only spaces, #'s, and new line characters.
- *
  */
 function drawChessboard(number) {
   // Declare output string and assign it an empty string
