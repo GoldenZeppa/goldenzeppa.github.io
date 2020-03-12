@@ -4,32 +4,18 @@
  * 0. Loops repeat a block of code a specific number of times.  There are three 
  * types of loops:  while loop, for loop, and for-in loops.  They all test a 
  * condition to continue executing the loop.  
- *
- * 1. The while loops are declared with the keyword while followed by a 
- * condition.  While the condition evaluates to true, the while loop will 
- * continue to execute the code block.  The condition must be manipulated 
- * within the loop to update condition accordingly.  If not coded correctly, the 
- * code can thrown into an infinite loop.
- *
- * 2. The for loops are declared with the keyword for followed by an initial 
- * value, a condition, and a increment / decrement.  While the condition 
- * evaluates to true, the for loop will continue to execute the code.  If the 
- * condition never evaluates to false, the for loop can also get caught in an 
- * infinite loop.
- *
- * 3. The for-in loops are declared with the keyword for followed by a 
- * declaration of the key variable and object reference.  In the for-in loop, 
- * the program tests if there are any keys left in the object to continue the 
- * loop.  No condition must be manipulates since it will continue the loop 
- * until all keys are exhausted.  There is no possibility of an infinite 
- * for-in loop.
  */
 
 var array = [1, 2, 3, 4, 5]
 
 // 1. While loop 
-// The while loop creates a loop that executes a specific number of times while
-// the test condition evaluates to true. 
+/*
+The while loops are declared with the keyword while followed by a condition.
+While the condition evaluates to true, the while loop will continue to execute 
+the code block.  The condition must be manipulated within the loop to update 
+condition accordingly.  If not coded correctly, the code can thrown into an 
+infinite loop.
+*/
 
 var i = 0
 while (i < array.length) {
@@ -40,9 +26,12 @@ while (i < array.length) {
 // NOTE:  The while loop can be rewritten into a for loop as shown below.
 
 // 2. For loop
-// The for loop consists of three expressions:  the initialization, the 
-// condition, and the test expression.  They are enclosed in parenthesis and 
-// separated by a semicolon.
+/*
+The for loops are declared with the keyword for followed by an initial value,
+a condition, and a increment / decrement.  While the condition evaluates to
+true, the for loop will continue to execute the code.  If the condition never 
+evaluates to false, the for loop can also get caught in an infinite loop.
+*/
 
 for (var x = 0; x < array.length; x++) {
     console.log(array[x]);   // final print results => 1\n2\n3\n4\n5 
@@ -61,7 +50,13 @@ for (var y = array.length - 1; y >= 0; y--) {
 // indices are traversed in descending order.
 
 // 3. For-in loop
-// The for-in loop iterates over a object with a finite number of keys.
+/* 
+The for-in loops are declared with the keyword for followed by a declaration
+of the key variable and object reference.  In the for-in loop, the program 
+tests if there are any keys left in the object to continue the loop.  No 
+condition must be manipulates since it will continue the loop until all keys 
+are exhausted.  There is no possibility of an infinite for-in loop.
+*/
 
 var contact = {
     id: 123,

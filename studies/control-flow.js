@@ -14,10 +14,10 @@ the if condition is true, then the code will execute.  Otherwise, it will
 continue to next possible option (if available).
 */
 
-var hour = 15;
+var hour = 6;
 
 if (hour >= 0 && hour <= 11) {
-    console.log('Good Morning!');
+    console.log('Good Morning!');        // prints => Good morning!
 }
 
 
@@ -56,7 +56,7 @@ var hour = 15;
 if (hour >= 0 && hour <= 11) {
     console.log('Good Morning!');
 } else {
-    console.log('Good Night!');
+    console.log('Good Night!');          // prints => Good night!
 }
 
 // Note:  The statement is executed if the specified condition is truthy.  If
