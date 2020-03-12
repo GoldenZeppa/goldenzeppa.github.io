@@ -54,8 +54,8 @@
  * a ? b: c
  */
 
-// 1. Assignment operator
-// Assignment operator assigns values
+// 1. Assignment operators
+// Assignment operators assign values
 
 var hour = 13;
 
@@ -65,31 +65,80 @@ hour += 2;
 
 console.log(hour);                       // prints => 15
 
+hour -= 5;
+
+console.log(hour);                       // prints => 10
+
+hour *= 4;
+
+console.log(hour);                       // prints => 40
+
+hour /= 8;
+
+console.log(hour);                       // prints => 5
+
+hour %= 6;
+
+console.log(hour);                       // prints => 5
+
 // 2. Arithmetic operator
-// Arithmetic opertator
+// Arithmetic opertators performs arithmetic
 
-hour = 13 + 3;
+hour = 13 + 2;
 
-console.log(hour);                       // prints => 16
+console.log(hour);                       // prints => 15
 
 hour++;
 
-console.log(hour);                       // prints => 17
+console.log(hour);                       // prints => 16
+
+hour = hour - 5;
+
+console.log(hour);                       // prints => 11
+
+hour--; 
+
+console.log(hour);                       // prints => 10
+
+hour = hour * 4;
+
+console.log(hour);                       // prints => 40
+
+hour = hour / 8;
+
+console.log(hour);                       // prints => 5
+
+hour = hour % 6;
+
+console.log(hour);                       // prints => 5
 
 // 3. Comparison operator 
+// Compare two values
+
+console.log(hour > 0);                   // prints => true
 
 console.log(hour >= 0);                  // prints => true
 
+console.log(hour < 5);                   // prints => false
+
+console.log(hour <= 5);                  // prints => true
+
+console.log(5 == '5');                   // prints => true
+
+console.log(5 === '5');                  // prints => false
+
 // 4. Logical operator 
 
-console.log(hour >= 0 && hour <= 11);    // prints => false
+console.log(hour >= 0 && hour <= 11);    // prints => true
 
-console.log(hour >= 17 && hour <= 21);   // prints => true
+console.log(hour >= 17 && hour <= 21);   // prints => false
+
+console.log(hour >= 17 || hour <= 21);   // prints => true
 
 // 5. Unary operators
-// Unary 
+// Unary operators only perform operations on one operand
 
-console.log(-hour);                    // prints => -17
+console.log(-hour);                    // prints => -5
 
 console.log(!true);                    // prints => false
 
